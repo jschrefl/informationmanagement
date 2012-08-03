@@ -1,0 +1,118 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+body
+{
+	font-family:'Times New Roman',Times,serif;
+	width: 595px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+a
+{
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+.profile-name
+{
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: solid #cccccc;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+
+#profile-img
+{
+	float: right;
+}
+
+.ribbon-heading
+{
+	font-weight: bold;
+	text-decoration: underline;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+
+.left-column h6 
+{
+	font-weight: bold;
+	display: inline;
+	float: left;
+	margin-right: 5px;
+	width: 80px;
+}
+
+.left-column p
+{
+	position: relative;
+	margin-left: 85px;
+}
+
+.left-column a 
+{
+	display: block;
+}
+
+.top-bar
+{
+	display: none;
+}
+
+
+.skill
+{
+	margin-top: 20px;
+	font-size: 18px;
+	float: left;
+	width: 120px;
+}
+
+.skill p
+{
+	padding-bottom: 5px;
+}
+
+.skill ul li
+{
+	list-style-type:disc;
+	list-style-position:inside;
+	padding-left: 20px;
+	padding-bottom: 3px;
+	font-size: 14px;
+}
+
+.life-segment
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.life-segment .name
+{
+	font-weight: bold;
+}
+
+.life-segment .title
+{
+	font-style: italic;
+}
+
+.personal-details
+{
+	margin-top: 10px;
+}
+
+.more-button
+{
+	display: none;
+}

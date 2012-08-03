@@ -1,0 +1,240 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+body
+{
+	 font-family: sans-serif;
+	 background-image: url(images/bg.jpg);
+	 background-repeat: repeat;
+}
+
+a
+{
+	text-decoration: none;
+	color:#999999;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+.content
+{
+  	width: 880px;
+ 	margin: 0 auto;
+}
+
+.left-column
+{
+	float: left;
+	width: 220px;
+	padding-top: 20px;
+	position: fixed; 
+}
+
+.right-column
+{
+	float: right;
+	background-color: white;
+	width: 660px;
+	padding-top: 20px;
+	-webkit-box-shadow: 8px 4px  #ccc,  -8px 0 4px #ccc;   
+	-moz-box-shadow: 8px 0 4px #ccc,  -8px 0 4px #ccc;   
+	box-shadow: 8px 0 4px #ccc,  -8px 0 4px #ccc; 
+}
+
+.right-column p
+{
+	margin-left: 20px;
+}
+
+#profile-img
+{
+   padding:10px;
+   border:1px solid #ccc;
+   background-color:#ffffff;
+}
+
+.top-bar
+{
+	margin: 20px;
+	vertical-align: middle;
+}
+
+.top-bar img
+{
+	padding-top: 2px;
+}
+
+.top-bar a{
+	text-decoration: none;
+	font-size: 12px;
+	color: #666666;
+	margin-right: 15px;
+	vertical-align: middle;
+}
+
+.top-bar a:hover{
+	text-decoration: underline;
+
+}
+
+#work
+{
+	 display: none;
+}
+
+#education
+{
+	display: none;
+}
+
+#awards
+{
+	display: none;
+}
+
+.left-column .profile-name
+{
+	font-size: 33px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+
+}
+
+.left-column h6
+{
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.left-column p
+{
+	font-size: 14px;
+	color:#686868;
+	padding-top: 5px;
+}
+
+.left-column a
+{
+	text-decoration: none;
+	font-size: 14px;
+	color:#686868;
+	padding-top: 5px;	
+}
+
+.ribbon-heading
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.life-segment
+{
+	margin:20px;
+}
+
+.life-segment .name
+{
+	font-size: 18px;
+	color:#999999;
+	padding-bottom: 5px;
+}
+
+.life-segment .title{
+	color:#777777;
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+
+.life-segment .description{
+	color:#999999;
+	font-size: 12px;
+}
+
+.skill
+{
+	margin: 20px;
+	font-size: 18px;
+	color:#999999;
+	float: left;
+	width: 120px;
+}
+
+.skill p
+{
+	padding-bottom: 5px;
+}
+
+.skill ul li
+{
+	list-style-type: circle;
+	list-style-position:inside;
+	padding-left: 20px;
+	padding-bottom: 3px;
+	color:#999999;
+	font-size: 14px;
+}
+
+
+.personal-details
+{
+	margin: 20px;
+	color: #777777;
+	font-size: 14px;
+}
+
+.personal-details span
+{
+	color:#999999;
+	font-size: 16px;
+
+	
+}
+
+.print
+{
+	float: right;
+}
+
+.website-link
+{
+	display: none;
+}
+
+.more-button {
+	font-family: sans-serif;
+	color: #666666;
+	font-size: 14px;
+	width:76px;
+	height:23px;
+	padding-top: 2px;
+	padding-right: 20px;
+	padding-bottom: 2px;
+	padding-left: 20px;
+	text-decoration: none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 0px #CCCCCC;
+	-moz-box-shadow: 0px 0px 0px #CCCCCC;
+	border: solid #CCCCCC 1px;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#E7E7E7));
+	background: -moz-linear-gradient(top, #ffffff, #E7E7E7);
+ -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#ffffff, endColorStr=#E7E7E7);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#ffffff, endColorStr=#E7E7E7);
+	display:inline-block;
+	margin-bottom: 20px;
+}
+
+.more-button:hover
+{
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e8e8e8));
+	background: -moz-linear-gradient(top, #f2f2f2, #e8e8e8);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#E7E7E7);
+}
