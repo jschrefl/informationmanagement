@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery Exercises</title>
+<script type="text/javascript" src="jquery-1.7.2.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"  type="text/javascript"></script>
+<script type="text/javascript">
+//1. Click: On clicking button “Click Me” you should be able to show alert box “Button was clicked”.
+$(document).ready(function(){
+	$("#clickme").bind("click",function(event){
+	   	alert("Button was clicked");
+	});
+});
+</script>
+<script type="text/javascript">
+// write a script that hides the RED box when "hide is clicked, and shows it when show is clicked
+$(document).ready(function(){
+	$("#show").bind("click",function(event){
+	   	$("#hidebox").show();
+	});
+	$("#hide").bind("click",function(event){
+	   	$("#hidebox").hide();
+	});
+});
+</script>
+
+<script type="text/javascript"> 
+// write a script that slides the ORANGE box when "Click to slide box" is clicked
+</script>
+<script type="text/javascript">
+// write a script that fades the MAROON box when the THE BOX is clicked
+$(document).ready(function(){
+	$("#fader").bind("click",function(event){
+	   	$("#fader").fadeOut("slow",  function() {
+   			$("#bringbrownbox").fadeIn("fast");
+ 		});
+	   	$("#bringbrownbox").bind("click", function(event){
+	   		$("#fader").fadeIn("slow", function(){
+	   			$("#bringbrownbox").fadeOut("fast");
+	   		});
+	   	});
+	});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#clickslide").click(function () {
+	      $("#slider").hide("slide", { direction: "up" }, 1000);
+	});
+});
+</script>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+	$("#resizable").click(function () {
+	      $("#animator").css("resize", "both");
+	      $("#animator").css("overflow", "auto");
+	});
+});
+</script> 
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#draggable").draggable();
+});
+</script>
+
+<link href="jquery.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css"> 
+div.panel,p.flip
+{
+margin:0px;
+padding:5px;
+text-align:center;
+background:#FCC;
+border:solid 1px #c3c3c3;
+text:
+}
+div.panel
+{
+height:450px;
+display:none;
+}
+#draggable{
+	position:relative;
+ }
+</style>
+
+</head>
+
+<body>
+<button id="clickme">Click Me</button>
+<div id="hide"> Hide </div>
+
+<div id="show"> Show </div>
+
+<div id="hidebox">
+	<p>I'm a ghost.</p>
+  </div>
+   
+<div id="clickslide">
+	<p> Click to slide box </p>
+</div>
+
+<div id="slider">
+	<p> Oh hey, I slid. </p>
+</div>
+
+<p>This box will fade into oblivion if you click on it...</p>
+
+<div id="fader">
+</div>
+
+<span id="bringbrownbox">Bring brown box</span>
+
+<br /><br />
+
+<button id="resizable">Resize this green box!</button>
+
+<div id="animator">
+</div>
+
+<h2>Please drag me!</h2>
+<div id="draggable">
+<img src="logo.jpg" border="0" alt="ischool logo"/> 
+</div>
+</body>
+</html>
+

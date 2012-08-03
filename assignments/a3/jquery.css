@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#hidebox{
+	height: 200px;
+	width:200px;
+	background-color: red;
+}
+
+#slider{
+		height: 200px;
+	width:200px;
+	background-color: orange;
+}
+
+#fader{
+	height: 200px;
+	width:200px;
+	background-color:#600;
+	margin-top: 30px;
+}
+
+#animator{
+	height: 200px;
+	width:200px;
+	background-color:#993;
+	margin-top: 30px;
+}
+
+#bringbrownbox{
+	display: none;
+}
